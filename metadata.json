@@ -1,0 +1,6 @@
+{
+  "name": "Milan Companion — Generative Particle Universe",
+  "description": "An interactive 3D WebGL particle universe featuring scroll-driven morphing formations, volumetric depth, and physical particle dynamics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

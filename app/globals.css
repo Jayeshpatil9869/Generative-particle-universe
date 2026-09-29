@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    background-color: #030303;
+    color: #e5e5e5;
+  }
+  
+  body {
+    background-color: #030303;
+    color: #ffffff;
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom subtle scrollbar matching reference */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 245, 160, 0.4);
+  }
+}
+
+/* Custom cursor hide default when custom cursor active */
+.custom-cursor-active,
+.custom-cursor-active * {
+  cursor: none !important;
+}
+
+/* Subtle particle glow helpers */
+.text-glow-emerald {
+  text-shadow: 0 0 16px rgba(0, 245, 160, 0.5), 0 0 32px rgba(114, 255, 210, 0.3);
+}
+
+.box-glow-emerald {
+  box-shadow: 0 0 24px -4px rgba(0, 245, 160, 0.35);
+}
+
